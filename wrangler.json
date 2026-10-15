@@ -1,16 +1,21 @@
 {
-	"compatibility_date": "2025-10-08",
-	"main": "src/index.ts",
-	"name": "wiki-page",
-	"upload_source_maps": true,
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_id": "876b5f87-3804-4a3b-88b8-6347d4c4711d",
-			"database_name": "wiki-account"
-		}
-	],
-	"observability": {
-		"enabled": true
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hinomoto-wiki",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-16",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wiki-account",
+      "database_id": "876b5f87-3804-4a3b-88b8-6347d4c4711d"
+    }
+  ],
+  "vars": {
+    "GITHUB_OWNER": "Altice-kun",
+    "GITHUB_REPO": "Wiki_Contents_Locker",
+    "GITHUB_BRANCH": "main"
+  }
 }
