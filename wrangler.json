@@ -1,0 +1,16 @@
+{
+	"compatibility_date": "2025-10-08",
+	"main": "src/index.ts",
+	"name": "wiki-page",
+	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_id": "876b5f87-3804-4a3b-88b8-6347d4c4711d",
+			"database_name": "wiki-account"
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}
